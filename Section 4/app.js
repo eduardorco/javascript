@@ -1,6 +1,6 @@
 // VAR x LET
 
-// VAR extrapola as funções, causando confusão no script. Por isso hoje em dia se usa let, que respeita seu local
+//! VAR extrapola as funções, causando confusão no script. Por isso hoje em dia se usa let, que respeita seu local
 
 // let name = 'MAX';
 // Se eu redeclarar a variavel "name" fora da função, da erro
@@ -12,12 +12,12 @@
 // console.log(name, age);
 // }
 
-// Se eu tentar chamar age fora da função, vai dar merda
+//! Se eu tentar chamar age fora da função, vai dar merda
 // console.log(name,age)
 // console.log(name)
 // greet();
 
-// Ao criar variaveis dentro de {} (Menos em casos de objeto) com LET ou CONST, elas só serão validas dentro daquele bloco
+//* Ao criar variaveis dentro de {} (Menos em casos de objeto) com LET ou CONST, elas só serão validas dentro daquele bloco
 
 function getName() {
   return prompt('Your name: ', '');
