@@ -54,19 +54,16 @@ const addMovieHandler = () => {
   const extraName = document.getElementById('extra-name').value;
   const extraValue = document.getElementById('extra-value').value;
 
-  if (
-    extraName.trim() === '' ||
-    extraValue.trim() === ''
-  ) {
+  if (extraName.trim() === '' || extraValue.trim() === '') {
     return;
   }
 
   const newMovie = {
     info: {
       set title(val) {
-        this.title = val
-      }
-      title,
+        this.title = val;
+      },
+
       [extraName]: extraValue,
     },
     id: Math.random().toString(),
